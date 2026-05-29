@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: iris-mlp-service
+  labels:
+    app: iris-mlp-app
+spec:
+  selector:
+    app: iris-mlp-app
+  type: LoadBalancer       # Use NodePort if you're on Minikube locally
+  ports:
+    - protocol: TCP
+      port: 80             # External port users hit
+      targetPort: 8501     # Internal Streamlit port

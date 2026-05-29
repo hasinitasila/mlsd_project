@@ -1,0 +1,12 @@
+stages:
+  train:
+    cmd: python train.py
+    deps:
+      - train.py
+    outs:
+      - data/iris.csv       # Raw data (tracked by DVC, not Git)
+      - model/mlp_model.pkl # Trained model binary
+      - model/scaler.pkl    # Fitted scaler
+    metrics:
+      - model/metrics.json:
+          cache: false       # Track metrics in Git (human-readable JSON)

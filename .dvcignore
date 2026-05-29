@@ -1,0 +1,4 @@
+# DVC will track everything in /data and /model
+# Add patterns here for files DVC should ignore
+*.pyc
+__pycache__/

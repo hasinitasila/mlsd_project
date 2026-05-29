@@ -1,0 +1,22 @@
+{
+  "accuracy": 0.9667,
+  "test_size": 30,
+  "train_size": 120,
+  "hidden_layers": [
+    128,
+    64,
+    32
+  ],
+  "activation": "relu",
+  "target_names": [
+    "setosa",
+    "versicolor",
+    "virginica"
+  ],
+  "feature_names": [
+    "sepal length (cm)",
+    "sepal width (cm)",
+    "petal length (cm)",
+    "petal width (cm)"
+  ]
+}

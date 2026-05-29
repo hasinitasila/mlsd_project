@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+.venv/
+
+# DVC-tracked files (Git only stores .dvc pointer files, not the actual data)
+data/
+model/mlp_model.pkl
+model/scaler.pkl
+
+# BUT metrics.json IS tracked by Git (see dvc.yaml: cache: false)
+!model/metrics.json
+
+# Misc
+.DS_Store
+*.egg-info/
+dist/
+build/
