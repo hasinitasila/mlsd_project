@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python train.py
+    deps:
+    - path: train.py
+      hash: md5
+      md5: 6b51a4edf75bcea6f70911cecbd8db49
+      size: 5148
+    outs:
+    - path: data/iris.csv
+      hash: md5
+      md5: 21d441a28bce4417276097df955afc50
+      size: 2928
+    - path: model/metrics.json
+      hash: md5
+      md5: bd4f7b0f626f510c72adbb6bf3a3d081
+      size: 355
+    - path: model/mlp_model.pkl
+      hash: md5
+      md5: 2225593f95c239f5651258b8c615f234
+      size: 277272
+    - path: model/scaler.pkl
+      hash: md5
+      md5: 11ccf387ac58bc513a5f391332559cbb
+      size: 711
