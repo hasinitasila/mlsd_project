@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: iris-mlp-app
-          # GitHub Actions replaces IMAGE_TAG with the commit SHA
-          image: ghcr.io/YOUR_GITHUB_USERNAME/iris-mlp-app:IMAGE_TAG
+         
+          image: hasini02/iris-mlp-app:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 8501
