@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_NAME: iris-mlp-app
-  REGISTRY:   ghcr.io/${{ github.repository_owner }}
+  REGISTRY: docker.io/hasini02
 
 jobs:
 
