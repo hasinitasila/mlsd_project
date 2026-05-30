@@ -40,7 +40,7 @@ with mlflow.start_run():
 
     # ── 4. Define hyperparameters ────────────────────────────────────────────
     params = {
-        "hidden_layer_sizes": (128, 64, 32),
+        "hidden_layer_sizes": (64, 32),
         "activation":         "relu",
         "solver":             "adam",
         "max_iter":           2000,
